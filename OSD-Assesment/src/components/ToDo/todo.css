@@ -1,0 +1,68 @@
+body {
+  background-color: #5b5e60;
+}
+
+.searchBar-container:hover .search-field {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.search-field::placeholder {
+  color: white;
+}
+
+.search-field:focus {
+  outline: none;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+@media (max-width: 582px) {
+  .search-field {
+    width: 250px !important;
+  }
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  padding: 0 !important;
+  background-color: #212121;
+}
+
+.items-container::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Responsiveness section */
+
+/* handle statuc responsiveness */
+@media (max-width: 1279px) {
+  .done-toShow {
+    display: flex !important;
+  }
+
+  .done-toHide {
+    display: none !important;
+  }
+
+  .doing-toShow {
+    display: flex !important;
+  }
+
+  .doing-toHide {
+    display: none !important;
+  }
+
+  .toDo-toShow {
+    display: flex !important;
+  }
+
+  .toDo-toHide {
+    display: none !important;
+  }
+}
+
+@media (max-width: 859px) {
+  .responsive {
+    flex-basis: 100% !important;
+  }
+}
