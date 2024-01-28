@@ -132,7 +132,12 @@ export const Login = () => {
             padding: 0,
             position: `absolute`,
             left: `50%`,
-            top: `25%`,
+            top: {
+              xs: `15%`,
+              sm: `15%`,
+              md: `35%`,
+              lg: `25%`,
+            },
             transform: `translateX(-50%)`,
           }}
         >
@@ -157,6 +162,30 @@ export const Login = () => {
           backgroundImage: `linear-gradient(#764f96, #2d2b52)`,
         }}
       >
+        <Box
+          sx={{
+            width: `250px`,
+            padding: 0,
+            position: `absolute`,
+            left: `50%`,
+            top: `70px`,
+            transform: `translateX(-50%)`,
+            display: {
+              xs: `block`,
+              sm: `block`,
+              md: `none`,
+              lg: `none`,
+            },
+            borderRadius: `12px`,
+            overflow: `hidden`,
+          }}
+        >
+          <img
+            src="../../public/images/Logo@2x.png"
+            alt=""
+            style={{ width: `100%` }}
+          />
+        </Box>
         <Box>
           <Box position={`relative`}>
             <Typography
